@@ -29,10 +29,6 @@ const CreatePost = () => {
     if (form.prompt) {
       try {
         setGeneratingImg(true);
-        console.log(
-          "import.meta.env.VITE_SERVER_URL",
-          import.meta.env.VITE_SERVER_URL
-        );
         const response = await fetch(
           `${import.meta.env.VITE_SERVER_URL}api/v1/dalle`,
           {
